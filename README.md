@@ -1,7 +1,7 @@
 # _BurgerTimeApp_
 ## *Eat-A-Burger Project App*
 
-![Logo]("http://www.classicgaming.cc/classics/burgertime/i/chase.gif")
+![Logo](.\public\assets\img\burgertimeLogo.png)
 
 * _*Eat-Da-Burger!*_ is a restaurant app that lets users input the names of burgers they'd like to eat.
 

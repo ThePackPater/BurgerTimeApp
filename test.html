@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/public/assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/models/burger.js"></script>
+
+    <style>
+        body {
+            background: url(https://i.pinimg.com/originals/80/37/36/803736c50f69362fa50b4b4bde680003.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .col-md-6 {
+            background: url(https://marketplace.canva.com/MABNxsSD6Co/1/thumbnail_large/canva-green-checkered-tablecloth-background-MABNxsSD6Co.jpg)
+        }
+        
+        .thumbnail {
+            position: relative;
+        }
+        
+        .caption {
+            position: absolute;
+            top: 45%;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+    <title>BurgerTimeTest</title>
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">BurgerTime at Eat-a-Burger</h1>
+            <p class="lead">Eat off the Menu, Create your own, then DEVOUR IT!!</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Fresh Burgers</h3>
+                <div class="row" id="box-search">
+                    <div class="thumbnail text-center">
+                        <img src="public\assets\img\burger.jpg " alt="" class="img-responsive">
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-dark mb-3 " style="max-width: 18rem; ">
+                    <div class="card-header ">Burger Name</div>
+                    <div class="card-body text-dark ">
+                        <img src="public\assets\img\burger.jpg " class="img-fluid img-thumbnail " alt="... ">
+                        <a href="# " class="btn btn-danger ">Devour IT!</a>
+                    </div>
+                </div>
+                <div class="card border-dark mb-3 " style="max-width: 18rem; ">
+                    <div class="card-header ">Burger Name</div>
+                    <div class="card-body text-dark ">
+                        <img src="public\assets\img\burger.jpg " class="img-fluid img-thumbnail " alt="... ">
+                        <a href="# " class="btn btn-danger ">Devour IT!</a>
+                    </div>
+                </div>
+                <div class="card border-dark mb-3 " style="max-width: 18rem; ">
+                    <div class="card-header ">Burger Name</div>
+                    <div class="card-body text-dark ">
+                        <img src="public\assets\img\burger.jpg " class="img-fluid img-thumbnail " alt="... ">
+                        <a href="# " class="btn btn-danger ">Devour IT!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <h3>Devoured Burgers</h3>
+                <div class="card border-dark mb-3 " style="max-width: 18rem; ">
+                    <div class="card-header ">Burger Name</div>
+                    <div class="card-body text-dark ">
+                        <img src="public\assets\img\burger.jpg " class="img-fluid img-thumbnail " alt="... ">
+                        <a href="# " class="btn btn-danger ">Delete!</a>
+                    </div>
+                </div>
+                <div class="card border-dark mb-3 " style="max-width: 18rem; ">
+                    <div class="card-header ">Delete!</div>
+                    <div class="card-body text-dark ">
+                        <img src="public\assets\img\burger.jpg " class="img-fluid img-thumbnail " alt="... ">
+                        <a href="# " class="btn btn-danger ">Delete!</a>
+                    </div>
+                </div>
+                <div class="card border-dark mb-3 " style="max-width: 18rem; ">
+                    <div class="card-header ">Burger Name</div>
+                    <div class="card-body text-dark ">
+                        <img src="public\assets\img\burgertime_cover.jpg" class="img-fluid img-thumbnail " alt="... ">
+                        <a href="# " class="btn btn-danger ">Delete!</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="card ">
+        <h5 class="card-header ">Featured</h5>
+        <div class="card-body ">
+            <h5 class="card-title ">Special title treatment</h5>
+            <p class="card-text ">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="# " class="btn btn-primary ">Go somewhere</a>
+        </div>
+    </div>
+    </div>
+</body>

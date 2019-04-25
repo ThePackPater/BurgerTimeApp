@@ -1,13 +1,13 @@
 -- ### Schema
-
 CREATE DATABASE burgers_db;
+
 
 USE burgers_db;
 
-CREATE TABLE clients
+CREATE TABLE burgers
 (
-	id INTEGER NOT NULL AUTO_INCREMENT,
-	burger_name VARCHAR (55) NOT NULL,
-    devoured BOOLEAN 
+	id int NOT NULL AUTO_INCREMENT,
+	burger_name VARCHAR (85) NOT NULL,
+    devoured BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );

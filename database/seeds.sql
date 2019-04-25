@@ -1,4 +1,4 @@
--- populate the `burgers` table with at least three entries
+
 
 INSERT INTO burgers (burger_name, devoured) VALUES ('Angry Dragon Burger', false);
 INSERT INTO burgers (burger_name, devoured) VALUES ('SmashVille Supreme Burger', false);

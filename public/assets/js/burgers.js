@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#submit-button").on("click", function() {
+    $("#submit").on("click", function() {
         var burgerData = {
             burger_name: $("#new_burger")
                 .val()
@@ -11,12 +11,11 @@ $(document).ready(function() {
             data: burgerData
         }).then(function() {
             console.log("created new burger");
-            // Reload the page to get the updated list
             location.reload();
         });
     });
 
-    $("#devour-button").on("click", function() {
+    $("#devour").on("click", function() {
         var devourData = {
             id: $(this).attr("data-id")
         };

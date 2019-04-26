@@ -8,61 +8,53 @@
   <br>
 </div>
 
-<div id="burgers" class="container text-center">
-  <div class="row">
-    <div class="col">
-      <br>
-      <h2>Fresh Burgers!</h2>
-      <br>
-      {{#each burgers}}
-      {{#unless this.devoured}}
-      <div class="card text-white bg-dark mb-3">
-        <div class="card-header">
-          <h5 class="card-title">{{id}}. {{burger_name}}</h5>
-        </div>
-        <button id="devour-button" class="btn btn-danger btn-lg mx-auto mt-4" data-id="{{id}}" type="submit">
-          Force Devour!
-        </button>
-        <br>
-        {{/unless}}
-        {{/each}}
-      </div>
-    </div>
-   
-    <div class="col">
-      <br>
-      <h2>Devoured Burgers!</h2>
-      <br>
-      {{#each burgers}}
-      {{#if this.devoured}}
-      <div class="card text-white bg-dark mb-3">
-        <div class="card-header">
-          <h5 class="card-title">{{id}}. {{burger_name}}</h5>
-        </div>
-        <button id="restore-button" class="btn btn-danger btn-lg mx-auto mt-4" data-id="{{id}}" type="submit">
-          Force Restore!
-        </button>
-        <br>
-        {{/if}}
-        {{/each}}
-      </div>
+
+
+<div class="d-flex bd-highlight">
+  <div class="p-2 flex-fill bd-highlight">
+    <br>
+    <h2>Ready to Eat Burgers!</h2>
+    <br>
+    {{#each burgers}}
+    {{#unless this.devoured}}
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <h5>{{id}}. {{burger_name}}</h5><button type="button" id="devour" class="btn btn-danger btn-lg data-id="
+          {{id}}"">FORCE DEVOUR!</button>
+      </li>
+    </ul>
+    <br>
+    {{/unless}}
+    {{/each}}
+  </div>
+
+  <div class="p-2 flex-fill bd-highlight">
+    <br>
+    <h2>Devoured Burgers!</h2>
+    <br>
+    {{#each burgers}}
+    {{#if this.devoured}}
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <h5>{{id}}. {{burger_name}}</h5><button type="button" id="restore" class="btn btn-danger btn-lg data-id="
+          {{id}}"">FORCE RESTORE!</button>
+      </li>
+    </ul>
+    <br>
+    {{/if}}
+    {{/each}}
+  </div>
+
+  <div class="p-2 flex-fill bd-highlight">
+    <br>
+    <h2>Request a Burger!</h2>
+    <br>
+    <div class="form-group">
+      <label for="new_burger"></label>
+      <input class="form-control" rows="4" id="new_burger" name="burger_name"></input>
+      <button id="submit-button" type="submit" class="btn btn-danger mx-auto mt-4"><i class="fas fa-utensils"></i>
+        Place
+        an Order!</button>
     </div>
   </div>
 </div>
-
-
-<br>
-<br>
-
- <div class="card">
-      <div class="card-body text-center">
-        <h3 class="card-title">Request a Custom Burger!!</h3>
-        <div class="form-group">
-          <label for="new_burger"></label>
-          <input class="form-control" rows="4" id="new_burger" name="burger_name"></input>
-          <button id="submit-button" type="submit" class="btn btn-danger mx-auto mt-4"><i class="fas fa-utensils"></i>
-            Place
-            an Order!</button>
-        </div>
-      </div>
-    </div>

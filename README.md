@@ -1,7 +1,7 @@
 # _BurgerTimeApp_
 ## *Eat-A-Burger Project*
 
-![Logo](/assets/img/geekBurger.png)
+![Logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRanDM2e-E9MRAenaVm2CXdvtu_cuBoAxV4ZRVf-oCQDzViS_xL)
 
 * _*Eat-Da-Burger!*_ is a restaurant app that lets users input the names of burgers they'd like to eat.
 
@@ -11,5 +11,4 @@
 
 ### Make Burgers and Devour them quick!
 
-![Logo](/assets/img/GeekBurgerSnippet.png)
 

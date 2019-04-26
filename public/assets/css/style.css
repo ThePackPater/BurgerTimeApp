@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#jb {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+#logo {
+    width: 400px;
+    height: 400px;
+}
+
+h2 {
+    color: whitesmoke
+}
+
+#burgers {
+    display: flexbox;
+}

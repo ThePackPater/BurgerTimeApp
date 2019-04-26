@@ -15,7 +15,7 @@ $(document).ready(function() {
         });
     });
 
-    $("#devour").on("click", function() {
+    $(".devour").on("click", function() {
         var devourData = {
             id: $(this).attr("data-id")
         };
@@ -24,12 +24,12 @@ $(document).ready(function() {
             type: "POST",
             data: devourData
         }).then(function() {
-            console.log("updated new burger to deveour!");
+            alert("burger devoured!");
             location.reload();
         });
     });
 
-    $("#restore-button").on("click", function() {
+    $(".restore").on("click", function() {
         var restoreData = {
             id: $(this).attr("data-id")
         };
@@ -38,7 +38,7 @@ $(document).ready(function() {
             type: "POST",
             data: restoreData
         }).then(function() {
-            console.log("updated new burger to restore!");
+            alert("burger restored!");
             location.reload();
         });
     });

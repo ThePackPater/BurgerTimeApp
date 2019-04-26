@@ -1,11 +1,13 @@
 body {
-    background-color: black;
+    background: url("/assets/img/stars.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 #jb {
-    background-color: black;
+    background: url("/assets/img/DSback.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: whitesmoke;
@@ -17,9 +19,15 @@ body {
 }
 
 h2 {
-    color: whitesmoke
+    color: whitesmoke;
+    text-decoration-line: underline;
 }
 
-#burgers {
-    display: flexbox;
+.list-group-item {
+    background: none;
+    color: whitesmoke;
+}
+
+.btn {
+    font-family: 'Josefin Sans', sans-serif;
 }

@@ -1,5 +1,4 @@
-$(function() {
-
+$(document).ready(function() {
     $("#submit-button").on("click", function() {
         var burgerData = {
             burger_name: $("#new_burger")

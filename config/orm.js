@@ -13,7 +13,7 @@ var orm = {
             "INSERT INTO ?? (??) VALUES (?)", [tablename, colname, burger_name],
             function(err, res) {
                 if (err) throw err;
-                console.log(result);
+                console.log(res);
                 cb(res);
             });
     },

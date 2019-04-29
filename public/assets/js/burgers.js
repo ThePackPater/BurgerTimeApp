@@ -10,7 +10,7 @@ $(document).ready(function() {
             type: "POST",
             data: burgerData
         }).then(function() {
-            console.log("created new burger");
+            //console.log("created new burger");
             location.reload();
         });
     });
@@ -23,8 +23,8 @@ $(document).ready(function() {
             type: "POST",
             data: devourData
         }).then(function() {
-            console.log("burger devoured!");
-            console.log(devourData);
+            //console.log("burger devoured!");
+            //console.log(devourData);
             location.reload();
         });
     });
@@ -37,8 +37,8 @@ $(document).ready(function() {
             type: "POST",
             data: restoreData
         }).then(function() {
-            console.log("burger restored!");
-            console.log(restoreData);
+            //console.log("burger restored!");
+            //console.log(restoreData);
             location.reload();
         });
     });

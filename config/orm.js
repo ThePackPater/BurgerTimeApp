@@ -13,7 +13,7 @@ var orm = {
             "INSERT INTO ?? (??) VALUES (?)", [tablename, colname, burger_name],
             function(err, res) {
                 if (err) throw err;
-                console.log(res);
+                //console.log(res);
                 cb(res);
             });
     },
@@ -22,7 +22,7 @@ var orm = {
 
         connection.query("UPDATE burgers_db.burgers SET devoured = ? WHERE id = ?", [devoured, id], function(err, res) {
             if (err) throw err;
-            console.log(res);
+            //console.log(res);
             cb(res);
 
         });

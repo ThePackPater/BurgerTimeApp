@@ -15,15 +15,18 @@ var burger = {
         });
     },
 
-    updateOne: function(burger_id, cb) {
-        orm.updateOne("burgers", "devoured", true, burger_id, function(res) {
+    updateOne: function(id, cb) {
+        orm.updateOne(true, id, function(res) {
+
             cb(res);
         });
     },
-    restoreOne: function(burger_id, cb) {
-        orm.updateOne("burgers", "devoured", false, burger_id, function(res) {
+    restoreOne: function(id, cb) {
+        orm.updateOne(false, id, function(res) {
+
             cb(res);
         });
+
     }
 };
 

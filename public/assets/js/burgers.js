@@ -15,30 +15,30 @@ $(document).ready(function() {
         });
     });
 
-    $(".devour").on("click", function() {
+    $(".devour-btn").on("click", function() {
         var devourData = {
-            id: $(this).attr("data-id")
+            id: ($(this).val())
         };
-
         $.ajax("/burger/eat", {
             type: "POST",
             data: devourData
         }).then(function() {
-            alert("burger devoured!");
+            console.log("burger devoured!");
+            console.log(devourData);
             location.reload();
         });
     });
 
-    $(".restore").on("click", function() {
+    $(".restore-btn").on("click", function() {
         var restoreData = {
-            id: $(this).attr("data-id")
+            id: ($(this).val())
         };
-
         $.ajax("/burger/restore", {
             type: "POST",
             data: restoreData
         }).then(function() {
-            alert("burger restored!");
+            console.log("burger restored!");
+            console.log(restoreData);
             location.reload();
         });
     });
